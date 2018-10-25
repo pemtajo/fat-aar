@@ -19,7 +19,7 @@ public class AndroidPluginHelper {
      * Throw exception if can not found
      */
     public static String getAndroidPluginVersion() {
-        return Reflect.on("com.android.builder.Version").get("ANDROID_GRADLE_PLUGIN_VERSION");
+        return Reflect.on("com.android.builder.model.Version").get("ANDROID_GRADLE_PLUGIN_VERSION");
     }
 
     /**
